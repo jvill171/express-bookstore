@@ -1,5 +1,9 @@
 /** Common config for bookstore. */
 
+const PG_PWD = require("./.env")
+require("dotenv").config();
+process.env.PGPASSWORD = PG_PWD;
+
 
 let DB_URI = `postgresql://`;
 
